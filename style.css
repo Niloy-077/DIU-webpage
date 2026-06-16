@@ -6,20 +6,22 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e8eff5; /* Soft blue-grey background */
+    background-color: #e8eff5; 
     display: flex;
     justify-content: center;
     padding: 50px 20px;
 }
 
 .container {
-    border: 3px solid #004b87; /* Blue */
+    border: 3px solid #004b87; 
     background-color: #ffffff;
     padding: 40px;
     width: 100%;
     max-width: 600px; 
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    /* Prevents anything inside from spilling out */
+    overflow: hidden; 
 }
 
 .header {
@@ -47,12 +49,14 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #278c43; /* Green */
+    color: #278c43; 
 }
 
+/* Fixed Table Layout */
 table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed; /* Forces columns to be equal and stay inside container */
 }
 
 th, td {
@@ -66,17 +70,19 @@ th {
     color: #004b87;
 }
 
+/* Fixed Input Boxes */
 .table-input {
-    width: 100%;
+    width: 100%; /* Shrinks input to fit the cell perfectly */
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
     outline: none;
+    box-sizing: border-box; /* Ensures padding doesn't expand the box */
 }
 
 .table-input:focus {
-    border-color: #278c43; /* Turns green when clicked */
+    border-color: #278c43; 
 }
 
 .form-group {
