@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daffodil International University Practice</title>
+    <title>Daffodil International University</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
         
+        <!-- Logo and Title Section -->
         <div class="header">
-            <div class="logo-box">
-                <span>DIU LOGO</span>
-            </div>
+            <!-- Pulling the official DIU logo from the web -->
+            <img src="https://daffodilvarsity.edu.bd/images/logo.png" alt="DIU Logo" class="diu-logo">
             <h1>DIU</h1>
         </div>
 
+        <!-- Table Section with Text Input Boxes -->
         <div class="section">
             <h2>Table =&gt;</h2>
             <table>
@@ -29,23 +30,26 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td><input type="text" placeholder="e.g., Omar" class="table-input"></td>
+                        <td><input type="text" placeholder="Roll No." class="table-input"></td>
+                        <td><input type="text" placeholder="Age" class="table-input"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
+        <!-- Form Section with Expanded Courses -->
         <div class="section">
             <h2>form ,</h2>
             <form>
                 <div class="form-group">
                     <label for="course">Course</label>
                     <select id="course" name="course">
+                        <option value="math">Desktop & Web Programming</option>
                         <option value="">Select course...</option>
-                        <option value="java">Java OOP</option>
-                        <option value="dbms">DBMS</option>
+                        <option value="java">Operating System & System Programming</option>
+                        <option value="dbms">Theory of Computing</option>
+                        <option value="algo">System Analysis & Design Capstone Project</option>
                     </select>
                 </div>
                 
